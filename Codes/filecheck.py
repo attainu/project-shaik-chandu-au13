@@ -1,7 +1,8 @@
 import os
 from group_by_date import Bydate
 from group_by_extension import GroupByExtension
-from sort_by_size import OrganizeBySize
+from group_by_size import *
+
 
 # group = GroupByExtension(path, files)
 
@@ -27,9 +28,8 @@ if __name__ == "__main__":
             groupbydate = Bydate(path, files)
             groupbydate.bydate(path, files)
         elif choice == 3:
-            path = input("enter the path")
-            sort = OrganizeBySize(path)
-            sort.size(path)
+            DIRECTORY_PATH = input("enter the path")
+            SIZEORGANISER(DIRECTORY_PATH)
         elif choice == 4:
             break
         else:
