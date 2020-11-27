@@ -28,8 +28,7 @@ class Bydate:
             '%a %b %d %H:%M:%S %Y')
 
             modified_date = str(modified_datetime_obj.day) + '-' + str(
-            modified_datetime_obj.month) + '-'
-            +str(modified_datetime_obj.year)
+            modified_datetime_obj.month) + '-'+str(modified_datetime_obj.year)
 
             if(os.path.isdir(modified_date)):
                 shutil.move(os.path.join(path, file), modified_date)

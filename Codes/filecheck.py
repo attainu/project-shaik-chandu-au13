@@ -19,9 +19,8 @@ if __name__ == "__main__":
 
         if choice == 1:
             path = input("enter the path")
-            files = os.listdir(path)
-            group = GroupByExtension(path, files)
-            group.grpbyext()
+            group = GroupByExtension(path)
+            group.grpbyext(path)
         elif choice == 2:
             path = input("enter the path")
             files = os.listdir(path)
